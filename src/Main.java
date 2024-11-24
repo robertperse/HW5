@@ -10,7 +10,7 @@ public class Main {
         }
 
         int clientDeviceYear = 2014;
-        int СlientOS = 0; // 0 - iOS, 1 - Android
+        clientOS = 1; // 0 - iOS, 1 - Android
         if (clientDeviceYear < 2015) {
             if (clientOS == 0) {
                 System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
