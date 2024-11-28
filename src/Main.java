@@ -9,11 +9,11 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        int clientDeviceYear = 2014;
+        int clientDeviceYear = 2016;
         clientOS = 1;
         if (clientDeviceYear < 2015 && clientOS == 0) {
                 System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
-            } else if (clientOS == 1) {
+            } else if (clientDeviceYear < 2015 && clientOS == 1) {
                 System.out.println("Установите облегчённую версию приложения для Android по ссылке");
         } else {
             if (clientOS == 0) {
