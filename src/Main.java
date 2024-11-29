@@ -2,19 +2,19 @@ public class Main {
     public static void main(String[] args) {
 
         int clientOS = 0;
-        if (clientOS==0) {
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        if (clientOS==1) {
+        if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
         int clientDeviceYear = 2016;
         clientOS = 1;
         if (clientDeviceYear < 2015 && clientOS == 0) {
-                System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
-            } else if (clientDeviceYear < 2015 && clientOS == 1) {
-                System.out.println("Установите облегчённую версию приложения для Android по ссылке");
+            System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
+        } else if (clientDeviceYear < 2015 && clientOS == 1) {
+            System.out.println("Установите облегчённую версию приложения для Android по ссылке");
         } else {
             if (clientOS == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
@@ -24,15 +24,13 @@ public class Main {
         }
 
         int year = 2021;
-        if (year > 1584){
-            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+        if (year > 1584) {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
                 System.out.println(year + " год является високосным");
-            }
-            else {
+            } else {
                 System.out.println(year + " год не является високосным");
             }
-        }
-        else {
+        } else {
             System.out.println("Год должен быть больше 1584.");
         }
 
